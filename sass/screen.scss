@@ -4,3 +4,468 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+@font-face
+{
+	font-family: GothamProMedium;
+	src: url(../fonts/GothamProMedium_0.ttf);
+}
+
+@font-face
+{
+	font-family: UbuntuMedium;
+	src: url(../fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face
+{
+	font-family: UbuntuBold;
+	src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face
+{
+	font-family: Ubuntu;
+	src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+html, body
+{
+	width: 100%;                                     
+	height: 100%;
+	margin: auto;
+}
+
+
+
+
+header
+{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 4;
+	.menu
+	{
+		background-color: #f1f4f6;
+		width: 100%;
+		height: 90px;
+		padding-left: 90px;
+		padding-right: 90px;
+		
+		.row
+		{
+			display: flex;
+			height: 100%;
+			align-items: center;
+			max-width: 1900px;
+			margin: auto;
+			padding: 0px;
+
+			ul
+			{
+				order: 2;
+				margin-left: auto;
+
+				.active
+				{
+					padding: 1vw;
+					border: 1px solid black;
+					border-radius: 4px;
+				}
+
+				li
+				{
+					display: inline-block;
+					font-family: UbuntuMedium;
+					font-size: 1.1vw;
+					padding-left: 1vw;
+					padding-right: 1vw;
+					
+					a
+					{
+						color: black;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.pagenator
+{
+	display: none;
+	position: relative;
+	z-index: 3;
+
+	.circle
+	{
+		cursor: pointer;
+	}
+}
+
+.btn-pink.mob, .tibo
+{
+	display: none;
+}
+
+.main[id='1']
+{
+	height: auto;
+	background-color: #f5f5f5;
+	padding-top: 2vw;
+	margin-top: 90px;
+	padding-bottom: 2vw;
+	
+	.container, .row
+	{
+		width: 100%;
+		max-width: 1900px;
+		margin: auto;
+	}
+
+	.container
+	{
+		padding: 0px 0px;
+	}
+	
+	.phoneblock
+	{
+		padding-left: 90px;
+		
+		.col-md-8
+		{
+			text-align: center;
+
+			img
+			{
+				width: 16vw;
+			}
+		}
+
+		.os
+		{
+			width: 100%;
+			text-align: center;
+			margin-top: 20px;
+
+			img
+			{
+				padding: 0px 15px;
+				width: auto;
+			}
+		}
+
+		.col-md-4
+		{
+
+			img
+			{
+				margin: auto;
+				margin-top: 60px;
+			}
+		}
+	}
+
+	.col-md-6
+	{
+		padding: 0px;
+		h1
+		{
+			font-family: GothamProMedium;
+			text-transform: uppercase;
+			font-size: 3vw;
+			line-height: 4vw;
+			letter-spacing: 40%;
+			margin-bottom: 2vw;
+			padding-right: 10vw;
+		}
+
+		p
+		{
+			font-family: Ubuntu;
+			font-size: 1.3vw;
+			line-height: 2vw;
+			padding-right: 10vw;
+
+			b
+			{
+				font-family: UbuntuMedium;
+			}
+		}
+	}
+}
+
+.btn-pink
+{
+	width: 455px;
+	height: 70px;
+	background-color: #f3379d;
+	border-radius: 3px;
+	line-height: 70px;
+	text-align: center;
+	color: #f1f4f6;
+	font-family: UbuntuMedium;
+	font-size: 17pt;
+	box-shadow: inset 0px -3px 0px rgba(0,0,0,.27);
+	margin-top: 40px;
+	cursor: pointer;
+
+	img
+	{
+		padding-left: 10px;
+	}
+}
+
+.main[id='2']
+{
+	height: auto;
+	width: 100%;
+	background-color: #FFF;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+
+	.container
+	{
+		position: relative;
+		max-width: 1900px;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		padding: 0px 90px;
+		background-image: url(../img/back1.jpg);
+		background-repeat: no-repeat;
+		background-size: 65%;
+		background-position: 15% 70%;
+		
+
+		.event[id='1']
+		{
+			
+			
+			position: absolute;
+			top: 40.68%;
+			left: 7.75%;
+			width: 20%;
+			
+		}
+
+		.event[id='2']
+		{
+			
+			position: absolute;
+			top: 53%;
+			left: 17.6%;
+			width: 27.5%;
+			
+		}
+
+		.event[id='3']
+		{
+		
+			position: absolute;
+			top: 54.72%;
+			left: 47.82%;
+			width: 7.5%;
+			
+		}
+
+		.event[id='4']
+		{
+			
+			position: absolute;
+			top: 36.9%;
+			left: 33.39%;
+			width: 28.9%;
+			
+		}
+
+		.event[id='5']
+		{
+			
+			position: absolute;
+			top: 16.3%;
+			left: 24.7%;
+			width: 15.57%;
+			
+		}
+		.event[id='6']
+		{
+			
+			position: absolute;
+			top: 13.6%;
+			left: 19.3%;
+			width: 9%;
+			
+		}
+
+		.event:not([id='6'])
+		{
+			opacity: 0;
+		}
+
+		.row
+		{
+			margin-left: 0px;
+			padding: 0px;
+
+			.col-md-8
+			{
+				padding: 0px;
+
+				h1
+				{
+					font-family: GothamProMedium;
+					font-size: 2.5vw;
+					text-transform: uppercase;
+					color: black;
+				}
+			}
+			.col-md-4
+			{
+				text-align: center;
+
+				img
+				{
+					background-color: white;
+					border: 10px solid white;
+					width: 70%;
+				}
+
+				.btn-pink
+				{
+					width: 270px;
+					margin: auto;
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+
+.main[id='3']
+{
+	height: auto;
+	width: 100%;
+	background-color: #01b5e6;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	
+	.container
+	{
+		max-width: 1900px;
+		width: 100%;
+		height: 100%;
+		padding: 0px 90px;
+		margin: auto;
+		.row
+		{
+			display: flex;
+			padding: 0px;
+			height: 100%;
+		}
+	}
+
+	.col-md-5
+	{
+		padding: 20px 0px;
+
+		h1
+		{
+			color: white;
+			font-family: GothamProMedium;
+			font-size: 2.5vw;
+			line-height: 3vw;
+			letter-spacing: 40%;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+
+			.sml
+			{
+				text-transform: lowercase;
+			}
+		}
+
+		p
+		{
+			color: white;
+			font-family: Ubuntu;
+			font-size: 1.3vw;
+			line-height: 2vw;
+			padding-right: 10vw;
+			margin-bottom: 8vw;
+		}
+
+		a
+		{
+			font-family: UbuntuBold;
+			font-size: 1.8vw;
+			color: #f2f8b0;
+			text-decoration: underline;
+		}
+	}
+	.col-md-7
+	{
+		flex-direction: column;
+		align-self: center;
+		height: 100%;
+		.slider
+		{
+			display: block;
+			position: relative;
+			white-space: nowrap;
+			text-align: center;
+			margin: auto;
+			overflow: hidden;
+
+			.arrow
+			{
+				position: absolute;
+				width: 30px;
+				height: 40px;
+				top: 300px;
+				left: 0px;
+				background-image: url(../img/arrow.png);
+				background-repeat: no-repeat;
+				z-index: 5;
+				cursor: pointer;
+			}
+
+			#right
+			{
+				transform: rotate(180deg);
+				left: auto;
+				right: 0px;
+			} 
+
+			.page
+			{
+				display: inline-block;
+				position: relative;
+				top: 0px;
+				left: 0px;
+				height: auto;
+				width: 100%;
+				img
+				{
+					height: auto;
+					width: 80%;
+				}
+			}
+		}
+
+		.btn-pink
+		{
+			width: 325px;
+			margin: auto;
+			margin-top: 0px;
+		}
+	}
+}
+
+.main
+{
+	min-height: calc( 100vh - 90px );
+}
