@@ -460,5 +460,5 @@ header .menu .row ul li a {
 
 /* line 468, ../sass/screen.scss */
 .main {
-  min-height: calc( 100vh - 90px );
+  min-height: calc( 60vh - 90px );
 }
